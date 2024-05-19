@@ -4,7 +4,7 @@
 title = InstagramDownloader
 
 # Package name
-package.name = instagramdownloader
+package.name = instagram_downloader
 
 # Source code where the main.py lives
 source.dir = .
@@ -13,10 +13,10 @@ source.dir = .
 version = 1.0
 
 # Application requirements
-requirements = python3, kivy, selenium, requests
+requirements = python3, kivy==2.0.0, selenium, requests
 
 # Permissions
-android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE
+android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 
 # Target Android API (should be as high as possible)
 android.api = 29
@@ -35,12 +35,8 @@ android.entrypoint = org.kivy.android.PythonActivity
 
 # Indicate whether the application should be fullscreen or not
 fullscreen = 0
-
-# Presplash image filename
-presplash.filename = %(source.dir)s/images/logo.png
-
-# Icon filename
-icon.filename = %(source.dir)s/images/logo.png
-
 # Supported orientation (one of landscape, sensorLandscape, portrait, or all)
 orientation = portrait
+
+# Icon filename
+icon.filename = images/logo.png
