@@ -47,7 +47,11 @@ jobs:
             libffi-dev \
             uuid-dev \
             libffi7
-        pip3 install buildozer cython==0.29.33
+        pip3 install --user --upgrade cython==0.29.33 virtualenv
+        git clone https://github.com/kivy/buildozer
+        cd buildozer
+        python setup.py build
+        pip install -e
 
     - name: Compile APK
       run: |
