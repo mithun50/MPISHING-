@@ -13,7 +13,7 @@ source.dir = .
 version = 1.0
 
 # Application requirements
-requirements = python3, kivy==2.0.0, selenium, requests
+requirements = python3, kivy==2.0.0, selenium, requests, kivy==1.1.1, sdl2_ttf==2.0.15
 
 # Permissions
 android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
