@@ -30,4 +30,4 @@ jobs:
 
       - name: Build APK
         run: |
-          p4a apk --private . --package org.downloader.app --name "Instadownloader" --version 1.0 --requirements=python3,kivy,selenium,requests, --dist_name instadownloader --permission INTERNET,WRITE_EXTERNAL_STORAGE --icon images/logo.png
+          p4a apk --private . --package org.downloader.app --name "Instadownloader" --version 1.0 --requirements=python3,kivy,selenium,requests, --dist_name instadownloader --permission INTERNET,WRITE_EXTERNAL_STORAGE --icon images/logo.png --arch armeabi-v7a
