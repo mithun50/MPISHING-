@@ -37,10 +37,10 @@ android.entrypoint = org.kivy.android.PythonActivity
 fullscreen = 0
 
 # Presplash image filename
-presplash.filename = %(source.dir)s/logo.png
+presplash.filename = %(source.dir)s/images/logo.png
 
 # Icon filename
-icon.filename = %(source.dir)s/logo.png
+icon.filename = %(source.dir)s/images/logo.png
 
 # Supported orientation (one of landscape, sensorLandscape, portrait, or all)
 orientation = portrait
