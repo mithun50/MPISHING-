@@ -21,7 +21,7 @@ class InstagramDownloader(App):
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
 
         # Logo
-        logo = Image(source='logo.png')  # Replace 'logo.png' with your logo file path
+        logo = Image(source='images/logo.png')  # Replace 'logo.png' with your logo file path
         layout.add_widget(logo)
 
         # Title label
