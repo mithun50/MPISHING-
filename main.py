@@ -39,13 +39,17 @@ class InstagramDownloader(App):
         layout.add_widget(download_button)
 
         # Result label
-        self.result_label = Label(text='', font_size=14, color=(0.5, 0.5, 0.5, 1))
+        self.result_label = Label(text='Mithun Dev', font_size=14, color=(0.5, 0.5, 0.5, 1))
         layout.add_widget(self.result_label)
 
         return layout
 
     def extract_content_url(self):
         url = self.input_field.text
+
+        # Validate URL
+        if not url.startswith('https://www.instagram.com/reel/'):
+            return 'Error: Invalid Instagram reel link'
 
         # Configure Selenium options
         chrome_options = Options()
@@ -100,4 +104,4 @@ class InstagramDownloader(App):
 
 
 if __name__ == '__main__':
-    InstagramDownloader().run()
+    InstagramDownloader().run(
